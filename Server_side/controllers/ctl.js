@@ -1,3 +1,5 @@
+const request = require('request');
+
 
 exports.getData = (req,res)=>{
   // console.log("i'm here")
@@ -32,3 +34,20 @@ exports.getData = (req,res)=>{
   })
 
 }
+
+
+
+exports.search = (req,res)=>{
+  if(req.body.search && req.body.location){
+    request('https://elgoog.uk/ajax.php?q=trump&p=1&c=web&la=fr&cc=dz', (err, response, body)=>{
+      if(err) {return console.log(err)}
+        res.status(200).send(body);
+    });
+  }else{
+    res.status(304).json({Error:'invalid parameters'});
+  }
+}
+
+
+
+
