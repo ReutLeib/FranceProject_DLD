@@ -305,7 +305,17 @@ background: linear-gradient(120deg, #7b4397 , #dc2430); /* W3C, IE 10+/ Edge, Fi
 
 
 /*-------------- Video section  --------------*/
-#video-sec {
+#video-sec1 {
+  background: url('../images/banner-bg-01.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+    text-align: center;
+  position: relative;
+    color: #fff;
+}
+
+#video-sec2 {
   background: url('../images/video-bg.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
@@ -313,10 +323,10 @@ background: linear-gradient(120deg, #7b4397 , #dc2430); /* W3C, IE 10+/ Edge, Fi
     text-align: center;
   position: relative;
     color: #fff;
-
 }
 
-#video-sec .overlay {
+
+#video-sec1 .overlay {
   background: rgba(03,03,03,0.6);
   width: 100%;
   height: 100%;
@@ -324,19 +334,19 @@ background: linear-gradient(120deg, #7b4397 , #dc2430); /* W3C, IE 10+/ Edge, Fi
   top: 0;
 }
 
-#video-sec h2 {
+#video-sec1 h2 {
   color: #ffffff;
   padding-top: 20px;
   padding-bottom: 16px;
 }
 
-#video-sec small{
+#video-sec1 small{
     color: #fff;
     display: block;
     margin-top: 10px;
 }
 
-#video-sec .fa {
+#video-sec1 .fa {
   position: relative;
   border: 2px solid #ffffff;
   border-radius: 100px;
@@ -350,8 +360,42 @@ background: linear-gradient(120deg, #7b4397 , #dc2430); /* W3C, IE 10+/ Edge, Fi
   margin-top: 22px;
 }
 
-.margin10{
-  margin-top: 10px;
+#video-sec2 .overlay {
+  background: rgba(03,03,03,0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#video-sec2 h2 {
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+#video-sec2 small{
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+}
+
+#video-sec2 .fa {
+  position: relative;
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 28px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 22px;
+}
+
+.margin20{
+  margin-top: 20px;
 }
 
 
