@@ -1,4 +1,6 @@
+var HTMLParser = require('node-html-parser');
 const request = require('request');
+
 
 
 exports.getData = (req,res)=>{
@@ -39,9 +41,24 @@ exports.getData = (req,res)=>{
 
 exports.search = (req,res)=>{
   if(req.body.search && req.body.location){
-    request('https://elgoog.uk/ajax.php?q=trump&p=1&c=web&la=fr&cc=dz', (err, response, body)=>{
+    request(`https://elgoog.uk/ajax.php?q=${req.body.search}&p=1&c=web&cc=${req.body.location}`, (err, response, body)=>{
       if(err) {return console.log(err)}
-        res.status(200).send(body);
+        // console.log(`myRes = ${response}\nmydata:${body}`);
+        var newBo = HTMLParser.parse(body);
+        var length = newBo.childNodes.length;
+        var result=[];
+        filterObjects=i=>{
+          if(i<length){
+            if(newBo.childNodes[i].classNames[0] === 'result'){
+              result.push(newBo.childNodes[i]);
+            }
+            // result.append(newBo.childNodes.filter(obj=>obj[0] == 'result'));
+            filterObjects(++i);
+          }else{
+            res.status(200).json(result);
+          }
+        }
+        filterObjects(1);
     });
   }else{
     res.status(304).json({Error:'invalid parameters'});
