@@ -173,7 +173,8 @@ section {
       -ms-flex-align: center;
         align-items: center;
   text-align: center;
-  height: 100vh;
+  /*height: 100vh;*/
+ height: 50vh;
   overflow: hidden;
   position: relative;
 }
@@ -187,7 +188,7 @@ section {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
 }
 
 #banner p {
@@ -312,6 +313,9 @@ section {
   background-size: cover;
   background-position: center center;
     text-align: center;
+        /*width: 90%;*/
+        width: 100%;
+    margin: 0 auto;
   position: relative;
     color: #fff;
 }
@@ -320,14 +324,83 @@ section {
   background: url('../images/video-bg.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
+      /*width: 90%;*/
+      width: 100%;
+    margin: 0 auto;
   background-position: center center;
     text-align: center;
   position: relative;
     color: #fff;
 }
 
-.textUnderVideo{
+#webProj {
+  background: url('../images/maptoproject.png') 100% 0 repeat-y fixed;
+  /*-webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;*/
+    text-align: center;
+  position: relative;
+    color: #fff;
+}
+
+.btn-webProj{
+    border:2px solid white;
+    color: white;
+    background: transparent;
+}
+
+#webProj .overlay {
+  background: rgba(03,03,03,0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#webProj h2 {
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+#webProj small{
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+}
+
+#webProj .faBtn {
+  position: relative;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 28px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 22px;
+}
+
+.height300{
+ height: 450px;
+}
+
+.paddingtop0 {
   padding-top: 0px;
+}
+
+.paddingBottom0 {
+  padding-bottom: : 0px !important;
+}
+
+.paddingBottom100{
+  padding-bottom: 100px;
+}
+
+.paddingBottom100{
+  padding-top: 200px
 }
 
 #video-sec1 .overlay {
@@ -404,9 +477,9 @@ section {
 
 
 /*-------------- Menu section --------------*/
-#location{
+/*#location{
     background-color: #e4e4e4;
-}
+}*/
 
 #location .media {
       background: #fff;
@@ -458,6 +531,10 @@ section {
     font-size: 16px;
 }
 
+#webProj .btn{
+    padding: 0px 20px;
+    font-size: 45px;
+}
 
 /*-------------- Hotels section --------------*/
 #hotels .gallery-thumb {
