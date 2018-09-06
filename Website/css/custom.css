@@ -73,6 +73,16 @@ h2 small {
     margin-top: 10px;
     display: block;
 }
+
+.ktav {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-top: 10px;
+    display: block;
+}
+
 h3 {
     font-weight: 700;
   color: #A9537B;
