@@ -111,9 +111,9 @@ $(document).ready(function() {
   $(function(){
     jQuery(document).ready(function() {
     $('#banner').backstretch([
-       "images/banner-bg-01.jpg", 
+       // "images/banner-bg-01.jpg", 
        "images/banner-bg-02.jpg",
-       "images/banner-bg-03.jpg",
+       // "images/banner-bg-03.jpg",
         ],  {duration: 3000, fade: 900});
     });
   })
